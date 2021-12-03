@@ -17,7 +17,7 @@ test('7 measurements are larger than the previous', () => {
   expect(measurementCount(data)).toBe(7);
 });
 
-test('sum of sliding window measurments increase 5 times', () => {
+test('sum of sliding window measurments increases 5 times', () => {
   expect(slidingSum(data)).toBe(5);
 });
 
