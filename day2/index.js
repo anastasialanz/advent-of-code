@@ -9,13 +9,16 @@ function submarineNavigation(positions) {
   for (let i = 0; i < positions.length; i++) {
     if (positions[i].includes("forward")) {
       horizontalPos += parseInt(positions[i].match(/\d+/g));
+      if (aim > 0) {
+        depth += (aim * parseInt(positions[i].match(/\d+/g)));
+      }
     } else if (positions[i].includes("down")) {
-      depth += parseInt(positions[i].match(/\d+/g));
+      aim += parseInt(positions[i].match(/\d+/g));
     } else if (positions[i].includes("up")) {
-      depth -= parseInt(positions[i].match(/\d+/g));
+      aim -= parseInt(positions[i].match(/\d+/g));
     }
   }
-  console.log(horizontalPos * depth);
+  console.log(horizontalPos * depth, horizontalPos, depth, aim);
   return horizontalPos * depth;
 };
 

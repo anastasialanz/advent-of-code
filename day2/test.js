@@ -10,6 +10,6 @@ const testData = [
   'forward 2'
 ];
 
-test('horizontal position times depth should equal 150', () => {
-  expect(submarineNavigation(testData)).toBe(150);
+test('horizontal position times depth should equal 900', () => {
+  expect(submarineNavigation(testData)).toBe(900);
 });
