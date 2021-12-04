@@ -1,3 +1,4 @@
+const fs = require('fs');
 const { measurementCount, slidingSum } = require('./index.js');
 
 data = [
