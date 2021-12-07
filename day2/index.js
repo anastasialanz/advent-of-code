@@ -20,7 +20,7 @@ function submarineNavigation(positions) {
   }
   console.log(horizontalPos * depth, horizontalPos, depth, aim);
   return horizontalPos * depth;
-};
+}
 
 submarineNavigation(data);
 
